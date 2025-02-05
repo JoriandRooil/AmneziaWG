@@ -1,44 +1,37 @@
-# AmneziaWG installer
+# AmneziaWG
 
-**This project is a bash script that aims to setup a [AmneziaWG](https://docs.amnezia.org/ru/documentation/amnezia-wg/) VPN on a Linux server, as easily as possible!**
+Этот проект представляет собой bash-скрипт, цель которого — максимально просто настроить VPN [AmneziaWG](https://docs.amnezia.org/ru/documentation/amnezia-wg/) на Linux-сервере
 
-## Requirements
+## Требования к установке
 
-Supported distributions:
+Поддерживаемые дистрибутивы:
+- AlmaLinux 9 и выше  
+- Debian 11 и выше  
+- Rocky Linux 9 и выше  
+- Ubuntu 22.04 и выше
 
-- AlmaLinux >= 9
-- Debian >= 11
-- Rocky Linux >= 9
-- Ubuntu >= 22.04
+Требуется 2 Гб свободного места для временных файлов
 
-others can work but not tested
+## Установка
 
-2Gb of free space is required for temporary files.
+1.Перед установкой настоятельно рекомендуется обновить вашу систему до <br> последней доступной версии и выполнить перезагрузку после этого
 
-## Usage
+2.Используйте один из предложенных ниже вариантов:
+```bash  
+curl -O https://raw.githubusercontent.com/JoricJim/AmneziaWG/refs/heads/main/install.sh
+```  
+```bash  
+wget https://raw.githubusercontent.com/JoricJim/AmneziaWG/refs/heads/main/install.sh
+```  
 
-Before installation it is strictly recommended to upgrade your system to the latest available version and perform the reboot afterwards.
+3.Установите права на выполнение:  
+```bash  
+chmod +x install.sh  
+```  
 
-Use curl or wget to download the script:
-```bash
-curl -O https://raw.githubusercontent.com/romikb/amneziawg-install/main/amneziawg-install.sh
-```
-```bash
-wget https://raw.githubusercontent.com/romikb/amneziawg-install/main/amneziawg-install.sh
-```
-
-Set permissions:
-```bash
-chmod +x amneziawg-install.sh
-```
-
-And execute:
-```bash
-./amneziawg-install.sh
+4.Запустите скрипт:  
+```bash  
+./install.sh  
 ```
 
-Answer the questions asked by the script and it will take care of the rest.
-
-It will install AmneziaWG (kernel module and tools) on the server, configure it, create a systemd service and a client configuration file.
-
-Run the script again to add or remove clients!
+5.Отвечайте на вопросы, задаваемые скриптом. Он установит AmneziaWG на сервер и настроит его
