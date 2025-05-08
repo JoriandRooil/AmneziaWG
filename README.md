@@ -18,10 +18,10 @@
 
 2.Используйте один из предложенных ниже вариантов:
 ```bash  
-curl -O https://raw.githubusercontent.com/JoricJim/AmneziaWG/refs/heads/main/install.sh
+curl -O https://raw.githubusercontent.com/JoriandRooil/AmneziaWG/refs/heads/main/install.sh
 ```  
 ```bash  
-wget https://raw.githubusercontent.com/JoricJim/AmneziaWG/refs/heads/main/install.sh
+wget https://raw.githubusercontent.com/JoriandRooil/AmneziaWG/refs/heads/main/install.sh
 ```  
 
 3.Установите права на выполнение:  
